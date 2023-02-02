@@ -37,8 +37,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/retux-game/retux.git
-        tag: v1.6.1
-        commit: be240b2a4d48158ed6d310acaeacfc1ec003f4d6
+        tag: v1.6.2
+        commit: 8b7e9e26dbd4f3c406ed3043a006edf1a6c82865
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$

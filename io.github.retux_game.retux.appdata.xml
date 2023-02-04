@@ -1,9 +1,9 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
   <id>io.github.retux_game.retux</id>
   <name>ReTux</name>
   <summary>Action platformer starring the Linux mascot, Tux</summary>
-  <developer_name></developer_name>
+  <developer_name/>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <description>
@@ -43,6 +43,7 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="1.6.2" date="2023-02-04"/>
     <release version="1.6.1" date="2021-10-11" type="stable"><description>
         <p>Fixes game controller issues, updated Spanish and Esperanto translations, added level name to level HUD.</p>
       </description>

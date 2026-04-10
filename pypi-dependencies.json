@@ -7,13 +7,13 @@
             "name": "python3-uniseg",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"uniseg>=0.7\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"uniseg\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/dd/3c/ed9ea7ad980ffd5af7d96f7293f80f0ec385e677ec2243fb40e4b95799c5/uniseg-0.7.1.post2-py2.py3-none-any.whl",
-                    "sha256": "1d386521f74735556899dfc83401558fe8a7a27c03b2b7acbd7ae5976eac58e7"
+                    "url": "https://files.pythonhosted.org/packages/80/6c/9eb6d93ad8b9ac96cba13e6d2f419c316d8fdb91013e12dd478a99501699/uniseg-0.10.1-py3-none-any.whl",
+                    "sha256": "74fe3f7b4ee46bbd703a70ea1e5cd28e04f63eee5af9a10388d93316c554e358"
                 }
             ]
         },
@@ -21,13 +21,23 @@
             "name": "python3-sge",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"sge>=2.0,<3.0\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"sge\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/37/24/52704ed3e60a54da704b6cf95fa4ec99367744296a59323820ba50446a50/sge-2.0.post0.tar.gz",
-                    "sha256": "794f1cd20abf19c5cab55fc99e5223895233ac3011671f4158b8ba4f3f2ead68"
+                    "url": "https://files.pythonhosted.org/packages/49/cc/08bba60f00541f62aaa252ce0cfbd60aebd04616c0b9574f755b583e45ae/pygame-2.6.1.tar.gz",
+                    "sha256": "56fb02ead529cee00d415c3e007f75e0780c655909aaa8e8bf616ee09c9feb1f"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/b6/4e/693535e888e1eb040a0265e35dbcfff466af8dc928a83cb554e407847d8c/sge-2.0.2.tar.gz",
+                    "sha256": "1719ae32e4ac57b491cc10c211489177b4e76ecc2a3220c5eec6572dd9d5e4ae"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/80/6c/9eb6d93ad8b9ac96cba13e6d2f419c316d8fdb91013e12dd478a99501699/uniseg-0.10.1-py3-none-any.whl",
+                    "sha256": "74fe3f7b4ee46bbd703a70ea1e5cd28e04f63eee5af9a10388d93316c554e358"
                 }
             ]
         },
@@ -35,7 +45,7 @@
             "name": "python3-xsge_gui",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xsge_gui>=1.2\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xsge_gui\" --no-build-isolation"
             ],
             "sources": [
                 {
@@ -49,7 +59,7 @@
             "name": "python3-xsge_lighting",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xsge_lighting>=1.0\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xsge_lighting\" --no-build-isolation"
             ],
             "sources": [
                 {
@@ -63,7 +73,7 @@
             "name": "python3-xsge_path",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xsge_path>=1.0\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xsge_path\" --no-build-isolation"
             ],
             "sources": [
                 {
@@ -77,7 +87,7 @@
             "name": "python3-xsge_physics",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xsge_physics>=0.12\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xsge_physics\" --no-build-isolation"
             ],
             "sources": [
                 {
@@ -91,7 +101,7 @@
             "name": "python3-xsge_tiled",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xsge_tiled>=1.0\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"xsge_tiled\" --no-build-isolation"
             ],
             "sources": [
                 {

@@ -1,6 +1,6 @@
 app-id: io.github.retux_game.retux
 runtime: org.freedesktop.Platform
-runtime-version: 22.08
+runtime-version: 25.08
 sdk: org.freedesktop.Sdk
 command: retux
 finish-args:
@@ -10,14 +10,18 @@ finish-args:
   - --device=dri
   - --socket=pulseaudio
 
-modules:
-  - name: portmidi
-    buildsystem: cmake-ninja
-    sources:
-      - type: git
-        url: https://github.com/PortMidi/portmidi.git
-        tag: v2.0.3
+cleanup:
+  - /include
+  - /lib/python3.*/*/pygame/docs
+  - /lib/python3.*/*/pygame/examples
+  - /lib/python3.*/*/pygame/tests
+  - /lib/python3.*/*/uniseg/docs
+cleanup-commands:
+  - python3 -m compileall --invalidation-mode=unchecked-hash /app
 
+modules:
+  - shared-modules/SDL2/SDL2_ttf.json
+  - shared-modules/SDL2/SDL2_image.json
   - python3-pygame.json
   - pypi-dependencies.json
 
@@ -30,7 +34,6 @@ modules:
       - install -Dm 755 retux.py ${FLATPAK_DEST}/share/retux/retux.py
       - install -m 644 get_errors.py globalize.py localize.py ${FLATPAK_DEST}/share/retux
       - cp -a data ${FLATPAK_DEST}/share/retux
-      - install -Dm 644 data/images/misc/icon.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
       - install -Dm 644 data/images/misc/icon.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
       - install -Dm 644 ${FLATPAK_ID}.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
       - install -Dm 644 ${FLATPAK_ID}.appdata.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml

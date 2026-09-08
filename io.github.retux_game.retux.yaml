@@ -1,6 +1,6 @@
 app-id: io.github.retux_game.retux
 runtime: org.freedesktop.Platform
-runtime-version: 25.08
+runtime-version: 26.08
 sdk: org.freedesktop.Sdk
 command: retux
 finish-args:
@@ -22,6 +22,7 @@ cleanup-commands:
 modules:
   - shared-modules/SDL2/SDL2_ttf.json
   - shared-modules/SDL2/SDL2_image.json
+  - shared-modules/SDL2/SDL2_mixer.json
   - python3-pygame.json
   - pypi-dependencies.json
 
